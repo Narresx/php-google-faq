@@ -125,15 +125,22 @@ $paragraphs = [
         overflow: hidden;
     }
 
-    header a{
+    header a,
+    footer a{
         text-decoration: none;
+    }
+
+    footer ul{
+        list-style-type: none;
+        margin: 0;
     }
     </style>
 </head>
 <body>
     <header class="row justify-content-between">
         <div class="col-3"><img src="https://www.keypersonofinfluence.com/wp/wp-content/uploads/2015/08/entrevo-keypersonofinfluence-get-discovered-on-google.jpg" alt="Google"><strong><a href="#" class="link-secondary">Privacy e termini</a></strong></div>
-        <div class="col-3 text-end"><i class="fa-thin fa-grid"></i></div>
+        <div class="col-3 text-end"><a href="#"><i class="fa-solid fa-grip px-2"></i></a><button type="button" class="btn btn-success rounded-circle">A</button></div>
+        
     </header>
     <section class="container m-auto">
      <?php foreach($paragraphs as $paragraph) {?>
@@ -143,5 +150,33 @@ $paragraphs = [
 
      <?php } ?>
     </section>
+    <div class="container-fluid bg-light p-0">
+        <footer class="contaier w-75 m-auto">
+            <nav class="d-flex bg-light justify-content-between">
+                    <ul class="d-flex">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Google</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Tutto su Google</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Termini</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <select>
+                            <option selected>Segli una lingua</option>
+                            <option value="1">Italiano</option>
+                            <option value="2">Inglese</option>
+                            <option value="3">Francese</option>
+                        </select>
+                    </div>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
