@@ -130,7 +130,8 @@ $paragraphs = [
         text-decoration: none;
     }
 
-    footer ul{
+    footer ul,
+    header ul{
         list-style-type: none;
         margin: 0;
     }
@@ -145,7 +146,24 @@ $paragraphs = [
     <header class="row justify-content-between oveflow-hidden">
         <div class="col-3"><img src="https://www.keypersonofinfluence.com/wp/wp-content/uploads/2015/08/entrevo-keypersonofinfluence-get-discovered-on-google.jpg" alt="Google"><strong><a href="#" class="link-secondary">Privacy e termini</a></strong></div>
         <div class="col-3 text-end"><a href="#"><i class="fa-solid fa-grip px-2"></i></a><button type="button" class="btn btn-success rounded-circle">A</button></div>
-        
+        <ul class="d-flex">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Introduzione</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Norme sulla privacy</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Termini di servizio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Tecnologie</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Domande frequenti</a>
+                        </li>
+                    </ul>
+                    <hr>
     </header>
     <section class="container m-auto p-0">
      <?php foreach($paragraphs as $paragraph) {?>
