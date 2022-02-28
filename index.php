@@ -3,7 +3,7 @@ $paragraphs = [
     'paragraph_1' =>[
         'title' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
         
-        'body' => "La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. 
+        'body' => "La recente decisione della di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. 
         
         La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome.
         
@@ -134,15 +134,20 @@ $paragraphs = [
         list-style-type: none;
         margin: 0;
     }
+
+    *{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
     </style>
 </head>
 <body>
-    <header class="row justify-content-between">
+    <header class="row justify-content-between oveflow-hidden">
         <div class="col-3"><img src="https://www.keypersonofinfluence.com/wp/wp-content/uploads/2015/08/entrevo-keypersonofinfluence-get-discovered-on-google.jpg" alt="Google"><strong><a href="#" class="link-secondary">Privacy e termini</a></strong></div>
         <div class="col-3 text-end"><a href="#"><i class="fa-solid fa-grip px-2"></i></a><button type="button" class="btn btn-success rounded-circle">A</button></div>
         
     </header>
-    <section class="container m-auto">
+    <section class="container m-auto p-0">
      <?php foreach($paragraphs as $paragraph) {?>
            
         <h2><?php echo $paragraph['title']?></h2>
